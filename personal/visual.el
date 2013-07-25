@@ -34,3 +34,10 @@
 
 ; avoid compiz manager rendering bugs
 (add-to-list 'default-frame-alist '(alpha . 100))
+
+; force white cursor in every frame
+(set-cursor-color "gray90")
+(add-hook 'window-setup-hook
+          '(lambda () (set-cursor-color "gray80")))
+(add-hook 'after-make-frame-functions
+          '(lambda (f) (with-selected-frame f (set-cursor-color "gray80"))))
