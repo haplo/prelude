@@ -2,6 +2,7 @@
 ;; Keybindings
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+; M-/ isn't easily available in my Spanish keyboard
 (global-set-key (kbd "M--") 'hippie-expand)
 
 ; I hate minimize
@@ -15,6 +16,7 @@
 (global-set-key (kbd "M-0") 'delete-window) ; was digit-argument
 (global-set-key (kbd "M-s") 'other-window) ; was center-linea
 
+; quick access to calculator
 (global-set-key (kbd "C-x c") 'calc)
 (global-set-key (kbd "C-x C-c") 'calc) ; was save-buffers-kill-terminal
 (global-set-key (kbd "C-x C") 'full-calc)
