@@ -22,3 +22,6 @@
 
 ; whitespace cleanup
 (global-set-key "\C-c\C-w" 'whitespace-cleanup)
+
+; browse-kill-ring
+(global-set-key (kbd "C-x C-k") 'browse-kill-ring)
