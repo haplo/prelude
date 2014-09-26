@@ -2,4 +2,4 @@
 ;; Auto-installed packages
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(prelude-require-packages '(solarized-theme yasnippet))
+(prelude-require-packages '(ag solarized-theme yasnippet))
