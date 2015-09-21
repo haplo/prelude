@@ -26,3 +26,9 @@
 
 ; browse-kill-ring
 (global-set-key (kbd "C-x C-k") 'browse-kill-ring)
+
+; Python keybindings
+(eval-after-load 'anaconda-mode
+  '(progn
+     (define-key anaconda-mode-map (kbd "M-RET") 'anaconda-mode-goto)
+     ))
