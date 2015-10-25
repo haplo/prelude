@@ -11,7 +11,7 @@
 ;; (require 'prelude-erlang)
 ;; (require 'prelude-evil)
 (require 'prelude-go)
-;; (require 'prelude-haskell)
+(require 'prelude-haskell)
 ;; (require 'prelude-helm)
 ;; (require 'prelude-helm-everywhere)
 (require 'prelude-ido)
