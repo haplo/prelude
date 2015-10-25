@@ -2,7 +2,7 @@
 ;; Org-mode
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(setq org-directory "~/Docs/Org")
+(setq org-directory "~/Documents/Org")
 (setq org-default-notes-file (concat org-directory "/notes.org"))
 
 ; add all *.org files in the org-directory defined above
