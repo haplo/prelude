@@ -30,5 +30,5 @@
 ; Python keybindings
 (eval-after-load 'anaconda-mode
   '(progn
-     (define-key anaconda-mode-map (kbd "M-RET") 'anaconda-mode-goto)
+     (define-key anaconda-mode-map (kbd "M-RET") 'anaconda-mode-find-definitions)
      ))
