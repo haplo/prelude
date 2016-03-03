@@ -15,3 +15,6 @@
 
 ;; don't ask for confirmation when pushing branches
 (setq magit-push-always-verify nil)
+
+;; enable magit-clean
+(put 'magit-clean 'disabled nil)
