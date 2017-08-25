@@ -21,4 +21,7 @@ session*
 .cask
 tramp
 /var/pcache
+.emacs.desktop
+.emacs.desktop.lock
+network-security.data
 .python-environments
