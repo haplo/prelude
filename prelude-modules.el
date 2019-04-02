@@ -1,6 +1,6 @@
 ;;; Uncomment the modules you'd like to use and restart Prelude afterwards
 
-;; (require 'prelude-c)
+(require 'prelude-c)
 (require 'prelude-clojure)
 ;; (require 'prelude-coffee)
 ;; (require 'prelude-common-lisp)
@@ -17,8 +17,8 @@
 (require 'prelude-ido)
 (require 'prelude-js)
 (require 'prelude-key-chord)
-;; (require 'prelude-latex)
-;; (require 'prelude-lisp)
+(require 'prelude-latex)
+(require 'prelude-lisp)
 ;; (require 'prelude-mediawiki)
 ;; (require 'prelude-ocaml)
 (require 'prelude-org)
@@ -32,4 +32,4 @@
 (require 'prelude-shell)
 (require 'prelude-web)
 (require 'prelude-xml)
-;; (require 'prelude-yaml)
+(require 'prelude-yaml)
