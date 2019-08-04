@@ -3,6 +3,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (prelude-require-packages '(ag
+                            go-dlv
                             godoctor
                             pip-requirements
                             solarized-theme
