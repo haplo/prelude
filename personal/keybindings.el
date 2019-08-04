@@ -32,3 +32,9 @@
   '(progn
      (define-key anaconda-mode-map (kbd "M-RET") 'anaconda-mode-find-definitions)
      ))
+
+; Go keybindings
+(eval-after-load 'go-mode
+  '(progn
+     (define-key go-mode-map (kbd "M-RET") 'godef-jump)
+     ))
