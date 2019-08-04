@@ -4,6 +4,7 @@
 
 (prelude-require-packages '(ag
                             go-dlv
+                            go-guru
                             go-snippets
                             godoctor
                             pip-requirements
