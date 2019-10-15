@@ -10,3 +10,8 @@
 
 ; disable spellchecking
 (setq prelude-flyspell nil)
+
+; fix GnuTLS bug on Emacs<26.3 that causes errors when downloading
+; Emacs packages over HTTPS
+; https://debbugs.gnu.org/34341
+(setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
