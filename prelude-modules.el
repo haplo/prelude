@@ -26,6 +26,7 @@
 (require 'prelude-programming)
 (require 'prelude-python)
 ;; (require 'prelude-ruby)
+(require 'prelude-rust)
 ;; (require 'prelude-scala)
 ;; (require 'prelude-scheme)
 (require 'prelude-scss)
