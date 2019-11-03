@@ -5,9 +5,9 @@
 ; backup files are for sissies
 (setq-default make-backup-files nil)
 
-; always indent with spaces
+; always indent with spaces unless major mode overrides
 (setq-default indent-tabs-mode nil)
-(setq-default default-tab-width 4)
+(setq tab-width 4)
 
 ; save files to home directory by default
 (setq-default default-directory '~)
