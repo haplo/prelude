@@ -38,3 +38,9 @@
   '(progn
      (define-key go-mode-map (kbd "M-RET") 'godef-jump)
      ))
+
+; Rust keybindings
+(eval-after-load 'rust-mode
+  '(progn
+     (define-key rust-mode-map (kbd "M-RET") 'racer-find-definition)
+     ))
