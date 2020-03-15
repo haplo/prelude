@@ -9,6 +9,10 @@
 (setq-default indent-tabs-mode nil)
 (setq tab-width 4)
 
+; it's 2020 already
+(setq-default fill-column 100)
+; TODO but keep it to 80 for some modes
+
 ; save files to home directory by default
 (setq-default default-directory '~)
 
