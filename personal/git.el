@@ -9,7 +9,7 @@
 
 ;; path to my root code dir, so I can do C-x g from anywhere
 (setq magit-repository-directories '(
-                                     ("~/Code" . 1)
+                                     ("~/Code" . 2)
                                      ("~/Code/go/src/github.com/haplo" . 1)
                                      ))
 
