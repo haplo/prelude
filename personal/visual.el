@@ -41,3 +41,7 @@
           '(lambda () (set-cursor-color "gray80")))
 (add-hook 'after-make-frame-functions
           '(lambda (f) (with-selected-frame f (set-cursor-color "gray80"))))
+
+; larger font for my monitor
+(add-to-list 'default-frame-alist '(font . "Noto Sans Mono 14"))
+(set-face-attribute 'default t :font "Noto Sans Mono 14")
