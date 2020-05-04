@@ -27,6 +27,9 @@
 ; browse-kill-ring
 (global-set-key (kbd "C-x C-k") 'browse-kill-ring)
 
+; Org-mode keybindings
+(global-set-key (kbd "C-c c") 'org-capture)
+
 ; Python keybindings
 (eval-after-load 'anaconda-mode
   '(progn
