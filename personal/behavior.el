@@ -11,6 +11,7 @@
 
 ; it's 2020 already
 (setq-default fill-column 100)
+(setq-default whitespace-line-column 100)
 ; TODO but keep it to 80 for some modes
 
 ; save files to home directory by default
