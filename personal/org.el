@@ -26,3 +26,6 @@
 ; disable linum-mode in org buffers, it's too slow
 (add-hook 'org-mode-hook
   '(lambda () (linum-mode 0)))
+
+; use python3 in org-babel
+(setq org-babel-python-command "python3")
