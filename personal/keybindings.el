@@ -2,47 +2,47 @@
 ;; Keybindings
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-; M-/ isn't easily available in my Spanish keyboard
+;; M-/ isn't easily available in my Spanish keyboard
 (global-set-key (kbd "M--") 'hippie-expand)
 
-; I hate minimize
+;; I hate minimize
 (global-set-key (kbd "C-z") 'ignore)
 (global-set-key (kbd "C-x C-z") 'ignore)
 
-; quicker window splitting
+;; quicker window splitting
 (global-set-key (kbd "M-1") 'delete-other-windows) ; was digit-argument
 (global-set-key (kbd "M-2") 'split-window-vertically) ; was digit-argument
 (global-set-key (kbd "M-3") 'split-window-horizontally) ; was digit-argument
 (global-set-key (kbd "M-0") 'delete-window) ; was digit-argument
 (global-set-key (kbd "M-s") 'other-window) ; was center-linea
 
-; quick access to calculator
+;; quick access to calculator
 (global-set-key (kbd "C-x c") 'calc)
 (global-set-key (kbd "C-x C-c") 'calc) ; was save-buffers-kill-terminal
 (global-set-key (kbd "C-x C") 'full-calc)
 
-; whitespace cleanup
+;; whitespace cleanup
 (global-set-key (kbd "C-c C-w") 'whitespace-cleanup)
 
-; browse-kill-ring
+;; browse-kill-ring
 (global-set-key (kbd "C-x C-k") 'browse-kill-ring)
 
-; Org-mode keybindings
+;; Org-mode keybindings
 (global-set-key (kbd "C-c c") 'org-capture)
 
-; Python keybindings
+;; Python keybindings
 (eval-after-load 'anaconda-mode
   '(progn
      (define-key anaconda-mode-map (kbd "M-RET") 'anaconda-mode-find-definitions)
      ))
 
-; Go keybindings
+;; Go keybindings
 (eval-after-load 'go-mode
   '(progn
      (define-key go-mode-map (kbd "M-RET") 'godef-jump)
      ))
 
-; Rust keybindings
+;; Rust keybindings
 (eval-after-load 'rust-mode
   '(progn
      (define-key rust-mode-map (kbd "M-RET") 'racer-find-definition)
