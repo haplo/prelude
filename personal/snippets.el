@@ -9,8 +9,7 @@
 
 ;; load yasnippet
 (require 'yasnippet)
-(add-to-list 'yas-snippet-dirs (expand-file-name "django"
-                                                 prelude-personal-snippets-dir))
+(add-to-list 'yas-snippet-dirs prelude-personal-snippets-dir)
 (yas-global-mode 1)
 
 ;; term-mode does not play well with yasnippet
