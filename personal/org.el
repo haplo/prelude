@@ -27,5 +27,13 @@
 (add-hook 'org-mode-hook
   '(lambda () (linum-mode 0)))
 
+; enable more languages support in org-babel
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((python . t)
+   (ipython . t)
+   (rust . t)
+   (sql-mode . t)))
+
 ; use python3 in org-babel
 (setq org-babel-python-command "python3")
