@@ -7,6 +7,10 @@
                             go-guru
                             go-snippets
                             godoctor
+                            ob-ipython
+                            ob-restclient
+                            ob-rust
+                            ob-sql-mode
                             pip-requirements
                             solarized-theme
                             visual-regexp-steroids
