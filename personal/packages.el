@@ -3,6 +3,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (prelude-require-packages '(ag
+                            auto-virtualenvwrapper
                             go-dlv
                             go-guru
                             go-snippets
