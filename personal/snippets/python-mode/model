@@ -3,5 +3,9 @@
 class ${1:Modelname}(models.Model):
     $0
 
-    def __unicode__(self):
-        return self.{$2:unicode_value}
+    class Meta:
+        verbose_name = _('${2:verbose_name}')
+        verbose_name_plural = _('${3:verbose_name_plural}')
+
+    def __str__(self):
+        return self.{$4:str_value}
