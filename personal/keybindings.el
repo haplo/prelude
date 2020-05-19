@@ -34,16 +34,19 @@
 (eval-after-load 'anaconda-mode
   '(progn
      (define-key anaconda-mode-map (kbd "M-RET") 'anaconda-mode-find-definitions)
+     (define-key anaconda-mode-map (kbd "C-M-RET") 'anaconda-mode-find-definitions-other-window)
      ))
 
 ;; Go keybindings
 (eval-after-load 'go-mode
   '(progn
      (define-key go-mode-map (kbd "M-RET") 'godef-jump)
+     (define-key go-mode-map (kbd "C-M-RET") 'godef-jump-other-window)
      ))
 
 ;; Rust keybindings
 (eval-after-load 'rust-mode
   '(progn
      (define-key rust-mode-map (kbd "M-RET") 'racer-find-definition)
+     (define-key rust-mode-map (kbd "C-M-RET") 'racer-find-definition-other-window)
      ))
