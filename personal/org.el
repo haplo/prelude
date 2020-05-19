@@ -33,6 +33,7 @@
  '((python . t)
    (ipython . t)
    (rust . t)
+   (shell . t)
    (sql-mode . t)))
 
 ;; use python3 in org-babel
