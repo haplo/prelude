@@ -1,4 +1,0 @@
-# contributor: Fidel Ramos <fidelramos@gmail.com>
-# name: ipdb
-# --
-import ipdb; ipdb.set_trace()
