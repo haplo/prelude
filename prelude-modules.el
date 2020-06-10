@@ -20,6 +20,7 @@
 (require 'prelude-key-chord)
 (require 'prelude-latex)
 (require 'prelude-lisp)
+(require 'prelude-lsp)
 ;; (require 'prelude-mediawiki)
 ;; (require 'prelude-ocaml)
 (require 'prelude-org)
