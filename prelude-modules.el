@@ -33,6 +33,7 @@
 ;; (require 'prelude-scheme)
 (require 'prelude-scss)
 (require 'prelude-shell)
+(require 'prelude-ts)
 (require 'prelude-web)
 (require 'prelude-xml)
 (require 'prelude-yaml)
