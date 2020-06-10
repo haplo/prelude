@@ -6,6 +6,7 @@
 ;; (require 'prelude-common-lisp)
 (require 'prelude-company)
 (require 'prelude-css)
+;; (require 'prelude-elixir)
 (require 'prelude-emacs-lisp)
 ;; (require 'prelude-erc)
 ;; (require 'prelude-erlang)
