@@ -4,6 +4,7 @@
 
 (prelude-require-packages '(ag
                             auto-virtualenvwrapper
+                            blacken
                             go-dlv
                             go-guru
                             go-snippets
