@@ -9,6 +9,7 @@
                             go-guru
                             go-snippets
                             godoctor
+                            ivy-hydra
                             ob-ipython
                             ob-restclient
                             ob-rust
