@@ -31,6 +31,7 @@
 (define-key my-mode-map (kbd "C-c c") 'org-capture)
 
 ;; ivy, counsel, swiper
+(define-key my-mode-map (kbd "M-x") (lambda () (interactive) (funcall 'counsel-M-x "")))
 (define-key my-mode-map (kbd "C-c v") 'ivy-push-view)
 (define-key my-mode-map (kbd "C-c V") 'ivy-pop-view)
 (define-key my-mode-map (kbd "C-c L") 'counsel-git-log)
