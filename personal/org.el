@@ -2,11 +2,11 @@
 ;; Org-mode
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(setq org-directory "~/Org")
+(setq org-directory (expand-file-name "~/Org"))
 (setq org-default-notes-file (concat org-directory "/notes.org"))
 
 ;; add all *.org files in the org-directory defined above
-(setq org-agenda-files (directory-files org-directory 't "^[^#].*org$"))
+(setq org-agenda-files org-directory)
 
 ;; save time when a task is done
 (setq org-log-done 'time)
