@@ -11,9 +11,6 @@
 ;; save time when a task is done
 (setq org-log-done 'time)
 
-;; turn off auto-fold
-(setq org-startup-folded nil)
-
 ;; use org-mode keys
 (setq org-disputed-keys (quote (([(shift up)] . [(meta shift up)])
                                 ([(shift down)] . [(meta shift down)])
