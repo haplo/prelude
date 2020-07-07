@@ -27,6 +27,9 @@
 ;; browse-kill-ring
 (define-key my-mode-map (kbd "C-x C-k") 'browse-kill-ring)
 
+;; visual-regexp
+(define-key my-mode-map (kbd "C-x C-r") 'vr/replace)
+
 ;; Org-mode keybindings
 (define-key my-mode-map (kbd "C-c c") 'org-capture)
 
@@ -34,6 +37,7 @@
 (define-key my-mode-map (kbd "M-x") (lambda () (interactive) (funcall 'counsel-M-x "")))
 (define-key my-mode-map (kbd "C-c v") 'ivy-push-view)
 (define-key my-mode-map (kbd "C-c V") 'ivy-pop-view)
+(define-key my-mode-map (kbd "C-c C-r") 'ivy-resume)
 (define-key my-mode-map (kbd "C-c L") 'counsel-git-log)
 (define-key my-mode-map (kbd "C-c k") 'counsel-rg)
 (define-key my-mode-map (kbd "C-c C-o") 'counsel-org-goto-all)
