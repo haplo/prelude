@@ -5,6 +5,7 @@
 (prelude-require-packages '(ag
                             auto-virtualenvwrapper
                             blacken
+                            git-timemachine
                             go-dlv
                             go-guru
                             go-snippets
