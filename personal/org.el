@@ -6,7 +6,7 @@
 (setq org-default-notes-file (concat org-directory "/notes.org"))
 
 ;; add all *.org files in the org-directory defined above
-(setq org-agenda-files org-directory)
+(setq org-agenda-files (list org-directory))
 
 ;; save time when a task is done
 (setq org-log-done 'time)
