@@ -11,6 +11,19 @@
 ;; save time when a task is done
 (setq org-log-done 'time)
 
+;; templates for org-capture
+(setq org-capture-templates
+      '(("n" "Note" entry (file+headline (concat org-directory "/notes.org") "Notes")
+         "** %?  :refile:\n  %i\n  %a")
+        ("t" "Task" entry (file+headline (concat org-directory "/notes.org") "Tasks")
+         "** TODO %?  :refile:\n  %i\n  %a")
+        ("c" "Code" entry (file+headline (concat org-directory "/code.org") "Notes")
+         "** TODO %?  :refile:\n  %i\n  %a")
+        ("s" "Solidshape note" entry (file+headline (concat org-directory "/solidshape/notes.org") "Notes")
+         "** TODO %?  :refile:\n  %i\n  %a")
+        ("S" "Solidshape meeting" entry (file+headline (concat org-directory "/solidshape/meetings.org") "Interruptions")
+         "** TODO %?  :refile:\n  %i\n  %a" :clock-in t :clock-resume t)))
+
 ;; use org-mode keys
 (setq org-disputed-keys (quote (([(shift up)] . [(meta shift up)])
                                 ([(shift down)] . [(meta shift down)])
