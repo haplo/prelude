@@ -8,6 +8,10 @@
 ;; add all *.org files in the org-directory defined above
 (setq org-agenda-files (list org-directory))
 
+;; custom org-agenda views
+(setq org-agenda-custom-commands
+      '(("r" tags "refile")))
+
 ;; save time when a task is done
 (setq org-log-done 'time)
 
