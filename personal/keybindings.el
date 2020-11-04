@@ -40,7 +40,8 @@
 (define-key my-mode-map (kbd "C-c C-r") 'ivy-resume)
 (define-key my-mode-map (kbd "C-c L") 'counsel-git-log)
 (define-key my-mode-map (kbd "C-c k") 'counsel-rg)
-(define-key my-mode-map (kbd "C-c C-o") 'counsel-org-goto-all)
+(define-key my-mode-map (kbd "C-c j") 'counsel-org-goto)
+(define-key my-mode-map (kbd "C-c C-j") 'counsel-org-goto-all)
 
 ;; Python keybindings
 (eval-after-load 'anaconda-mode
