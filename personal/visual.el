@@ -7,7 +7,6 @@
 
 ;; disable scrollbars, they just waste precious screen space
 (scroll-bar-mode 0)
-(tool-bar-mode 0)
 
 ;; blinking top and bottom lines instead of speaker buzz
 (setq-default visible-bell t)
