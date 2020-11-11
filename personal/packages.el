@@ -3,7 +3,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (prelude-require-packages '(ag
-                            auto-virtualenvwrapper
+                            auto-virtualenv
                             blacken
                             git-timemachine
                             go-dlv
