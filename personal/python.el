@@ -13,6 +13,12 @@
 ;; Less verbosity
 (setq auto-virtualenv-verbose nil)
 
+;; set up integration with python-language-server
+;; https://github.com/andrew-christianson/lsp-python-ms
+(require 'lsp-python-ms)
+(setq lsp-python-ms-auto-install-server t)
+(add-hook 'python-mode-hook #'lsp)
+
 ;; blacken configuration
 ;; https://github.com/pythonic-emacs/blacken
 (require 'blacken)

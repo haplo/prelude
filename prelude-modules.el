@@ -27,7 +27,7 @@
 (require 'prelude-org)
 ;; (require 'prelude-perl)
 (require 'prelude-programming)
-(require 'prelude-python)
+;; (require 'prelude-python)
 ;; (require 'prelude-ruby)
 (require 'prelude-rust)
 ;; (require 'prelude-scala)
