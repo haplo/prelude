@@ -2,4 +2,3 @@
 ;; Rust
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(setq lsp-ui-doc-include-signature t)
