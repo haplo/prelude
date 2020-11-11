@@ -5,7 +5,6 @@
 ;; enable auto-virtualenv
 ;; https://github.com/robert-zaremba/auto-virtualenv
 (require 'auto-virtualenv)
-(add-hook 'python-mode-hook 'auto-virtualenv-set-virtualenv)
 ;; Activate on changing buffers
 (add-hook 'window-configuration-change-hook 'auto-virtualenv-set-virtualenv)
 ;; Activate on focus in
@@ -17,11 +16,18 @@
 ;; https://github.com/andrew-christianson/lsp-python-ms
 (require 'lsp-python-ms)
 (setq lsp-python-ms-auto-install-server t)
-(add-hook 'python-mode-hook #'lsp)
 
 ;; blacken configuration
 ;; https://github.com/pythonic-emacs/blacken
 (require 'blacken)
-(add-hook 'python-mode-hook #'blacken-mode)
 (setq blacken-only-if-project-is-blackened t)
 (setq blacken-line-length fill-column)
+
+(defun my-python-config ()
+  "My personal configuration for python-mode"
+  (subword-mode +1)
+  (auto-virtualenv-set-virtualenv)
+  (lsp)
+  (blacken-mode +1)
+  )
+(add-hook 'python-mode-hook 'my-python-config)
