@@ -43,13 +43,6 @@
 (define-key my-mode-map (kbd "C-c j") 'counsel-org-goto)
 (define-key my-mode-map (kbd "C-c C-j") 'counsel-org-goto-all)
 
-;; Python keybindings
-(eval-after-load 'anaconda-mode
-  '(progn
-     (define-key anaconda-mode-map (kbd "M-RET") 'anaconda-mode-find-definitions)
-     (define-key anaconda-mode-map (kbd "C-M-RET") 'anaconda-mode-find-definitions-other-window)
-     ))
-
 ;; Go keybindings
 (eval-after-load 'go-mode
   '(progn
