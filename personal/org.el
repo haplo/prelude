@@ -20,7 +20,7 @@
       `(("n" "Note" entry (file+headline ,(expand-file-name "notes.org" org-directory) "Notes")
          "** %?  :refile:\n  %i\n  %a")
         ("t" "Task" entry (file+headline ,(expand-file-name "notes.org" org-directory) "Tasks")
-         "** TODO %?  :refile:\n  %i\n  %a")
+         "** TODO %?")
         ("c" "Code" entry (file+headline ,(expand-file-name "code.org" org-directory) "Notes")
          "** TODO %?  :refile:\n  %i\n  %a")
         ("s" "Solidshape note" entry (file+headline ,(expand-file-name "solidshape/notes.org" org-directory) "Notes")
