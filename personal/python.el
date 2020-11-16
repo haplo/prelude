@@ -21,7 +21,6 @@
 ;; https://github.com/pythonic-emacs/blacken
 (require 'blacken)
 (setq blacken-only-if-project-is-blackened t)
-(setq blacken-line-length fill-column)
 
 (defun my-python-config ()
   "My personal configuration for python-mode"
