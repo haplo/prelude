@@ -2,6 +2,8 @@
 ;; Keybindings
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+(require 'my-mode)
+
 ;; M-- is in the same place as M-/ in a Spanish keyboard
 (define-key my-mode-map (kbd "M--") 'hippie-expand)
 
