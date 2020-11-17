@@ -31,7 +31,7 @@
 (define-key my-mode-map (kbd "s-v r") 'vr/replace)
 (define-key my-mode-map (kbd "s-v q") 'vr/query-replace)
 
-;; Org-mode keybindings
+;; Global org-mode keybindings
 (define-key my-mode-map (kbd "C-c c") 'org-capture)
 
 ;; ivy, counsel, swiper
@@ -41,8 +41,13 @@
 (define-key my-mode-map (kbd "C-c C-r") 'ivy-resume)
 (define-key my-mode-map (kbd "C-c L") 'counsel-git-log)
 (define-key my-mode-map (kbd "C-c k") 'counsel-rg)
-(define-key my-mode-map (kbd "C-c j") 'counsel-org-goto)
 (define-key my-mode-map (kbd "C-c C-j") 'counsel-org-goto-all)
+
+;; Org-mode keybindings
+(eval-after-load 'org-mode
+  '(progn
+     (define-key my-mode-map (kbd "C-c j") 'counsel-org-goto)
+     ))
 
 ;; Go keybindings
 (eval-after-load 'go-mode
