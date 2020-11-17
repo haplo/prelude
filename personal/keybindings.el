@@ -48,6 +48,9 @@
 (define-key my-mode-map (kbd "C-c k") 'counsel-rg)
 (define-key my-mode-map (kbd "C-c C-j") 'counsel-org-goto-all)
 
+;; git-timemachine
+(define-key my-mode-map (kbd "s-m t") 'git-timemachine)
+
 ;; Org-mode keybindings
 (eval-after-load 'org-mode
   '(progn
