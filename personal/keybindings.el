@@ -36,6 +36,7 @@
 
 ;; ivy, counsel, swiper
 (define-key my-mode-map (kbd "M-x") (lambda () (interactive) (funcall 'counsel-M-x "")))
+(define-key my-mode-map (kbd "C-r") 'swiper-backward)
 (define-key my-mode-map (kbd "C-c v") 'ivy-push-view)
 (define-key my-mode-map (kbd "C-c V") 'ivy-pop-view)
 (define-key my-mode-map (kbd "C-c C-r") 'ivy-resume)
