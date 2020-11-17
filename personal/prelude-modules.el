@@ -38,3 +38,5 @@
 (require 'prelude-web)
 (require 'prelude-xml)
 (require 'prelude-yaml)
+
+(provide 'prelude-modules)
