@@ -28,7 +28,8 @@
 (define-key my-mode-map (kbd "C-x C-k") 'browse-kill-ring)
 
 ;; visual-regexp
-(define-key my-mode-map (kbd "C-x C-r") 'vr/replace)
+(define-key my-mode-map (kbd "s-v r") 'vr/replace)
+(define-key my-mode-map (kbd "s-v q") 'vr/query-replace)
 
 ;; Org-mode keybindings
 (define-key my-mode-map (kbd "C-c c") 'org-capture)
