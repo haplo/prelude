@@ -14,7 +14,10 @@
 ;; quicker window splitting
 (define-key my-mode-map (kbd "M-1") 'delete-other-windows) ; was digit-argument
 (define-key my-mode-map (kbd "M-2") 'split-window-vertically) ; was digit-argument
-(define-key my-mode-map (kbd "M-3") (lambda () (interactive) (funcall 'split-window-horizontally (+ fill-column 4)))) ; was digit-argument
+(define-key my-mode-map (kbd "M-3") (lambda ()
+                                      (interactive)
+                                      (funcall 'split-window-horizontally
+                                               (+ fill-column 4)))) ; was digit-argument
 (define-key my-mode-map (kbd "M-0") 'delete-window) ; was digit-argument
 (define-key my-mode-map (kbd "M-s") 'other-window) ; was center-linea
 
