@@ -6,7 +6,7 @@
 (setq org-default-notes-file (concat org-directory "/notes.org"))
 
 ;; add all *.org files in the org-directory defined above
-(setq org-agenda-files (list org-directory))
+(setq org-agenda-files (list org-directory (expand-file-name "solidshape" org-directory)))
 
 ;; custom org-agenda views
 (setq org-agenda-custom-commands
