@@ -10,7 +10,6 @@
                             go-snippets
                             godoctor
                             ivy-hydra
-                            lsp-python-ms
                             ob-ipython
                             ob-restclient
                             ob-rust

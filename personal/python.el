@@ -12,11 +12,6 @@
 ;; Less verbosity
 (setq auto-virtualenv-verbose nil)
 
-;; set up integration with python-language-server
-;; https://github.com/andrew-christianson/lsp-python-ms
-(require 'lsp-python-ms)
-(setq lsp-python-ms-auto-install-server t)
-
 (defun my-python-config ()
   "My personal configuration for python-mode"
   (subword-mode +1)
