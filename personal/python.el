@@ -17,16 +17,11 @@
 (require 'lsp-python-ms)
 (setq lsp-python-ms-auto-install-server t)
 
-;; blacken configuration
-;; https://github.com/pythonic-emacs/blacken
-(require 'blacken)
-(setq blacken-only-if-project-is-blackened t)
-
 (defun my-python-config ()
   "My personal configuration for python-mode"
   (subword-mode +1)
   (auto-virtualenv-set-virtualenv)
   (lsp)
-  (blacken-mode +1)
+  (python-black-on-save-mode)
   )
 (add-hook 'python-mode-hook 'my-python-config)

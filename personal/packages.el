@@ -4,7 +4,6 @@
 
 (prelude-require-packages '(ag
                             auto-virtualenv
-                            blacken
                             git-timemachine
                             go-dlv
                             go-guru
@@ -17,6 +16,7 @@
                             ob-rust
                             ob-sql-mode
                             pip-requirements
+                            python-black
                             solarized-theme
                             visual-regexp-steroids
                             yasnippet
