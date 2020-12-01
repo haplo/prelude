@@ -7,7 +7,7 @@
 
 (setq-default lsp-ui-doc-include-signature t)
 
-(setq-default lsp-ui-doc-use-webkit t)
+(setq-default lsp-ui-doc-use-webkit nil)
 
 ;; https://emacs-lsp.github.io/lsp-mode/page/performance/
 (setq gc-cons-threshold 100000000)
