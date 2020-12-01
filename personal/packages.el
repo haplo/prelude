@@ -14,6 +14,7 @@
                             ob-restclient
                             ob-rust
                             ob-sql-mode
+                            orgit
                             pip-requirements
                             python-black
                             ripgrep
