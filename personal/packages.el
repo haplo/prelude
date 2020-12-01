@@ -16,6 +16,7 @@
                             ob-sql-mode
                             pip-requirements
                             python-black
+                            ripgrep
                             solarized-theme
                             visual-regexp-steroids
                             yasnippet
