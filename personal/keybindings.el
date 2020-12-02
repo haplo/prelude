@@ -60,6 +60,12 @@
      (define-key my-mode-map (kbd "C-c j") 'counsel-org-goto)
      ))
 
+;; LSP keybindings
+(eval-after-load 'lsp-mode
+  '(progn
+     (define-key lsp-mode-map (kbd "M-RET") 'lsp-find-definition)
+     ))
+
 ;; Go keybindings
 (eval-after-load 'go-mode
   '(progn
