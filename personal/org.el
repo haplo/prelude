@@ -67,3 +67,13 @@
 
 ;; use python3 in org-babel
 (setq org-babel-python-command "python3")
+
+;; syntax highlighting for exported source code blocks, needs listings and color latex
+;; packages (texlive-latex-recommended package in Debian/Ubuntu)
+(require 'ox-latex)
+(setq org-latex-listings 'minted)
+(add-to-list 'org-latex-packages-alist '("" "minted"))
+(setq org-latex-pdf-process
+      '("pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"
+        "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"
+        "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"))
