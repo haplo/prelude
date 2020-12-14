@@ -37,7 +37,7 @@
          "** TODO %?  :refile:\n  %i\n  %a")
         ("si" "Interruption" entry (file+headline ,(expand-file-name "solidshape/meetings.org" org-directory) "Interruptions")
          "** %?" :clock-in t :clock-resume t)
-        ("sj" "Jira" entry (file+headline ,(expand-file-name "solidshape/notes.org" org-directory) "Jira tasks to create")
+        ("sj" "Jira" entry (file+headline ,(expand-file-name "solidshape/notes.org" org-directory) "Jira tasks management")
          "** TODO %?" :clock-in t :clock-resume t)
         ("sr" "PR review" entry (file+headline ,(expand-file-name "solidshape/notes.org" org-directory) "Reviews")
          "** [[%^{PR URL}][%^{PR description}]]" :clock-in t :clock-resume t)
