@@ -9,7 +9,7 @@
 (add-hook 'window-configuration-change-hook 'auto-virtualenv-set-virtualenv)
 ;; Activate on focus in
 (add-hook 'focus-in-hook 'auto-virtualenv-set-virtualenv)
-;; Less verbosity
+;; Less verbosity (set to t for debugging)
 (setq auto-virtualenv-verbose nil)
 
 (defun my-python-config ()
