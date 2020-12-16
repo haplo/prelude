@@ -12,9 +12,14 @@
 ;; Less verbosity (set to t for debugging)
 (setq auto-virtualenv-verbose nil)
 
+(require 'pyvenv)
+(setq pyvenv-mode-line-indicator
+      '(pyvenv-virtual-env-name ("[venv:" pyvenv-virtual-env-name "] ")))
+
 (defun my-python-config ()
   "My personal configuration for python-mode"
   (subword-mode +1)
+  (pyvenv-mode +1)
   (auto-virtualenv-set-virtualenv)
   (lsp)
   (python-black-on-save-mode)
