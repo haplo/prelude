@@ -27,6 +27,8 @@ prelude-cheatsheet.el
 prelude-cheatsheet.aux
 prelude-cheatsheet.log
 transient/
+var/
+# personal ignores
 .python-environments
 .cache
 .lsp-session*
