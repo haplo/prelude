@@ -16,19 +16,23 @@
 (setq pyvenv-mode-line-indicator
       '(pyvenv-virtual-env-name ("[venv:" pyvenv-virtual-env-name "] ")))
 
-;; prefer flake8 over pyflakes in pyls
-;; https://vxlabs.com/2018/06/08/python-language-server-with-emacs-and-lsp-mode/
-(defun lsp-python-use-flake8 ()
-  (let ((lsp-cfg `(:pyls (:configurationSources ("flake8")))))
-    ;; TODO: check lsp--cur-workspace here to decide per server / project
-    (lsp--set-configuration lsp-cfg)))
+(require 'lsp-pyls)
+
+(setq lsp-pyls-configuration-sources ["flake8"])
+(setq lsp-pyls-plugins-autopep8-enabled nil)
+(setq lsp-pyls-plugins-flake8-enabled t)
+(setq lsp-pyls-plugins-jedi-completion-enabled t)
+(setq lsp-pyls-plugins-pydocstyle-enabled nil)
+(setq lsp-pyls-plugins-pyflakes-enabled nil)
+(setq lsp-pyls-plugins-pylint-enabled nil)
+(setq lsp-pyls-plugins-rope-completion-enabled nil)
+(setq lsp-pyls-plugins-yapf-enabled nil)
 
 (defun my-python-config ()
   "My personal configuration for python-mode"
   (subword-mode +1)
   (pyvenv-mode +1)
   (auto-virtualenv-set-virtualenv)
-  (lsp-python-use-flake8)
   (lsp)
   (python-black-on-save-mode)
   )
