@@ -17,7 +17,6 @@
                             ob-sql-mode
                             orgit
                             pip-requirements
-                            python-black
                             ripgrep
                             solarized-theme
                             visual-regexp-steroids
