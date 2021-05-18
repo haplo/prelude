@@ -34,7 +34,7 @@
   (subword-mode +1)
   (pyvenv-mode +1)
   (auto-virtualenv-set-virtualenv)
-  (lsp)
+  (lsp-deferred)
   )
 (defun lsp-python-install-save-hooks ()
   (add-hook 'before-save-hook #'lsp-format-buffer t t))
