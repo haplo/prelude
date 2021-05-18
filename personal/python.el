@@ -16,17 +16,18 @@
 (setq pyvenv-mode-line-indicator
       '(pyvenv-virtual-env-name ("[venv:" pyvenv-virtual-env-name "] ")))
 
-(require 'lsp-pyls)
+(require 'lsp-pylsp)
 
-(setq lsp-pyls-configuration-sources ["flake8"])
-(setq lsp-pyls-plugins-autopep8-enabled nil)
-(setq lsp-pyls-plugins-flake8-enabled t)
-(setq lsp-pyls-plugins-jedi-completion-enabled t)
-(setq lsp-pyls-plugins-pydocstyle-enabled nil)
-(setq lsp-pyls-plugins-pyflakes-enabled nil)
-(setq lsp-pyls-plugins-pylint-enabled nil)
-(setq lsp-pyls-plugins-rope-completion-enabled nil)
-(setq lsp-pyls-plugins-yapf-enabled nil)
+(setq lsp-pylsp-configuration-sources ["flake8"])
+(setq lsp-pylsp-plugins-autopep8-enabled nil)
+(setq lsp-pylsp-plugins-flake8-enabled t)
+(setq lsp-pylsp-plugins-jedi-completion-enabled t)
+(setq lsp-pylsp-plugins-pycodestyle-enabled nil)
+(setq lsp-pylsp-plugins-pydocstyle-enabled nil)
+(setq lsp-pylsp-plugins-pyflakes-enabled nil)
+(setq lsp-pylsp-plugins-pylint-enabled nil)
+(setq lsp-pylsp-plugins-rope-completion-enabled t)
+(setq lsp-pylsp-plugins-yapf-enabled nil)
 
 (defun my-python-config ()
   "My personal configuration for python-mode"
