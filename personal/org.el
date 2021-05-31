@@ -44,8 +44,9 @@
         ))
 
 ;; disable linum-mode in org buffers, it's too slow
+;; enable visual-line-mode for wrapping long lines
 (add-hook 'org-mode-hook
-  '(lambda () (linum-mode 0)))
+  '(lambda () (linum-mode 0) (visual-line-mode +1)))
 
 ;; enable more languages support in org-babel
 (org-babel-do-load-languages
