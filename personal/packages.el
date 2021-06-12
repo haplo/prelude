@@ -17,6 +17,7 @@
                             ob-sql-mode
                             orgit
                             pip-requirements
+                            python-docstring
                             ripgrep
                             solarized-theme
                             visual-regexp-steroids

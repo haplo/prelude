@@ -33,6 +33,7 @@
   "My personal configuration for python-mode"
   (subword-mode +1)
   (pyvenv-mode +1)
+  (python-docstring-mode +1)
   (auto-virtualenv-set-virtualenv)
   (lsp-deferred)
   )
