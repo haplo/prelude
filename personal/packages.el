@@ -4,6 +4,7 @@
 
 (prelude-require-packages '(ag
                             auto-virtualenv
+                            geiser-guile
                             git-timemachine
                             go-dlv
                             go-guru

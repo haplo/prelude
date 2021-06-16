@@ -31,7 +31,7 @@
 ;; (require 'prelude-ruby)
 (require 'prelude-rust)
 ;; (require 'prelude-scala)
-;; (require 'prelude-scheme)
+(require 'prelude-scheme)
 (require 'prelude-scss)
 (require 'prelude-shell)
 (require 'prelude-ts)
